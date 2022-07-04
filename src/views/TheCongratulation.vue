@@ -1,11 +1,6 @@
 <template>
   <div class="flex justify-center mt-20">
-    <img
-      src="/public/rrlogo.jpeg"
-      width="300"
-      class="rounded-full border-2"
-      alt=""
-    />
+    <img src="/rrlogo.jpeg" width="300" class="rounded-full border-2" alt="" />
   </div>
   <div class="flex justify-center">
     <div class="w-96 text-white">

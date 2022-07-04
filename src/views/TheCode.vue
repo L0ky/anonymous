@@ -18,7 +18,7 @@
           @click="checkCode"
           class="bg-blue-500 w-10 h-10 flex items-center justify-center rounded-md"
         >
-          <img src="/public/check-solid.svg" class="w-6 h-6" />
+          <img src="/check-solid.svg" class="w-6 h-6" />
         </button>
       </div>
     </div>
