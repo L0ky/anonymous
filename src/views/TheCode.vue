@@ -13,7 +13,7 @@
         <p class="text-right w-10 p-2 hover:text-white text-transparent">8</p>
       </div>
       <div class="flex">
-        <input v-model="msg" class="text-black py-2 rounded-md mr-2" />
+        <input v-model="passCode" class="text-black py-2 rounded-md mr-2" />
         <button
           @click="checkCode"
           class="bg-blue-500 w-10 h-10 flex items-center justify-center rounded-md"
@@ -39,18 +39,14 @@
 
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
+import { useRouter, useRoute } from "vue-router";
 </script>
 
 <script>
 export default {
-  data() {
-    return {
-      msg: "",
-    };
-  },
   methods: {
     checkCode() {
-      if (this.msg === "08/10") {
+      if (this.passCode === "08/10") {
         this.$router.push("/congratulation");
       }
     },
